@@ -1,0 +1,18 @@
+Aula 4
+
+Seção 1: introdução
+
+Onde o JavaScript é utilizado?
+
+
+* Interagir com HTML e CSS (DOM);
+
+* Calcular, manipular e validar dados;
+/*
+Pegar por exemplo:
+Largura da tela, altura da tela ou algum valor que venha do backend e manipular em prol do que se queira fazer. Por exemplo: detectar que o usuário está usando um dispositivo mobile.
+*/
+
+* Pode ser utilizado como linguagem server-side(Node.JS);
+
+* Linguagem base de grandes frameworks (React, Angular, Vue);

@@ -1,0 +1,3 @@
+https://jsbin.com/?html,output // Maneira alternativa de executar JS.
+
+https://stackoverflow.com/ // StackOverFlow

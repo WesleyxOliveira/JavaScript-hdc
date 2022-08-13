@@ -1,0 +1,55 @@
+Metodos de Array
+
+1 - Push()
+
+let pessoa = ["Wesley", "João", "Joice"];
+
+pessoa.push("Maria");  => Adiciona o elemento Maria no último index do array pessoa.
+
+
+
+2 - pop()
+
+let pessoa = ["Wesley", "João", "Joice"];
+
+let pessoa_excluída = pessoa.pop();  => Exclui o último indice do array e retorna o valor excluído.
+
+
+
+3 - shift()
+
+let frutas = ["Maçã", "Melão", "Uva"];
+
+let frutaRemovida = frutas.shift();  = Remove o primeiro indice do array e retorna o valor removido.
+
+
+4 - unshift()
+
+let frutas = ["Maçã", "Melão", "Uva"];
+
+frutas.unshift("Laranja");  => Cria um novo elemento no índice 0 do array.
+
+
+5 - indexOf()
+
+let numeros = [0, 1, 2, 1, 0]
+
+console.log(numeros.indexOf(1));  => Vai me retornar a posição do parâmetro informado no array, se o valor não existir é retornado o valor -1.
+
+
+6 - lastindexOf()
+
+let numeros = [0, 1, 2, 1, 0]
+
+console.log(numeros.lastIndexOf(1));  => Vai me retornar a posição do último valor 1 do array.
+
+
+7 - slice()
+
+let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let novoArray = numeros.slice(2, 9);  => vai me retornar um novo array pegando os valores do array numeros do indice 2 ao 9 não incluindo 9.
+
+let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let novoArray = numeros.slice(2, -2);  => nesse caso vai me retornar um a partir do indice 2 até o 7.

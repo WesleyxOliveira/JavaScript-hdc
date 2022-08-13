@@ -1,0 +1,52 @@
+metodos de objetos JavaScript
+
+1 - delete => Serve para deletar uma propriedade de um objeto. Exemplo:
+
+let pessoa = {
+    nome: "Wesley",
+    idade: 31,
+    masculino: true,
+}
+
+delete pessoa.nome;  =>  Deleta a propriedade nome do objeto.
+
+
+
+
+2 - Adicionando uma propriedade ao objeto.
+
+let pessoa = {
+    nome: "Wesley",
+    idade: 31,
+    masculino: true,
+}
+
+pessoa.casado = false;  =>  Adiciona a propriedade casado ao objeto pessoa.
+
+
+
+
+3 - Assign - copiando as propriedades de um objeto. Exemplo: 
+
+let objetoA = {
+    prop1: 'teste',
+    prop2: 'testando',
+};
+
+let objetoB = {
+    prop3: 'propriedade',
+};
+
+Object.assign(objetoB, objetoA);  =>  Copia as propriedades do objetoA para o objetoB.
+
+
+
+4 - Verificando as chaves de um Objeto.
+
+let carro = {
+    portas: 2,
+    portamalas: "200l",
+    motor: "2.0",
+}
+
+console.log(Object.keys(carro));   =>   retorna os nomes das propriedades dos objetos.

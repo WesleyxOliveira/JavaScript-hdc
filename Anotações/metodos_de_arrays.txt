@@ -53,3 +53,17 @@ let novoArray = numeros.slice(2, 9);  => vai me retornar um novo array pegando o
 let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 let novoArray = numeros.slice(2, -2);  => nesse caso vai me retornar um a partir do indice 2 até o 7.
+
+
+
+8 - forEach (funciona como o for, vai ler índice por índice do array.(fácil)
+
+let nomes = ["Wesley", "Maria", "José", "João"];
+
+nomes.forEach(names => {
+    if(names == "Maria") {
+        console.log("Maria, mãe de Deus");
+    } else {
+        console.log(names);
+    }
+});

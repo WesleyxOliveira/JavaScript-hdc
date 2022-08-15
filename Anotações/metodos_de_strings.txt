@@ -1,0 +1,11 @@
+Métodos muito utilizados de strings
+
+1 - trim() - Esse método remove tudo que não é uma string da string. O método trim() retorna o texto sem espaços em branco no início e/ou fim da string. O trim() não altera o valor da string original.
+
+var nome = "       Wesley       ";
+
+var nomeCorrigido = nome.trim();
+
+console.log(nome);  =>        Wesley    
+  
+console.log(nomeCorrigido); => Wesley

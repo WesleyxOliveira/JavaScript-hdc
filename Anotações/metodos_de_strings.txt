@@ -9,3 +9,39 @@ var nomeCorrigido = nome.trim();
 console.log(nome);  =>        Wesley    
   
 console.log(nomeCorrigido); => Wesley
+
+
+
+
+
+2 - padstart()
+
+O método padStart() preenche a string original com um determinado caractere, ou conjunto de caracteres, (várias vezes, se necessário) até que a string resultante atinja o comprimento fornecido. O preenchimento é aplicado antes do primeiro caractere da string original. A string original não é modificada.
+
+
+let sku = "34";
+
+console.log(sku.padStart(6, "0"));
+
+let sku2 = "274";
+
+console.log(sku2.padStart(6, "x"));
+
+
+
+console.log("abc".padStart(10, "x")); => xxxxxxxabc
+
+
+
+3 - split();
+
+O método split() serve para dividir uma string e retornar um array. A string vai ser dividia usando o parâmetro que for passado como argumento, por exemplo, se eu passar o argumento ", ": virgula e espaço, js vai separ a frase onde tiver uma virgula e um espaço e retornar aquela frase como um array. 
+
+
+var valores = "Estudantes em primeiro lugar, Confiança, Transparência, Comprometimento, Colaboração, Nosso negócio é gente";
+
+var resultado = valores.split(", ");
+
+console.log(resultado);   => 
+
+['Estudantes em primeiro lugar', 'Confiança', 'Transparência', 'Comprometimento', 'Colaboração', 'Nosso negócio é gente']

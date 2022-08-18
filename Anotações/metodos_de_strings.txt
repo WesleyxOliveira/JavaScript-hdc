@@ -45,3 +45,32 @@ var resultado = valores.split(", ");
 console.log(resultado);   => 
 
 ['Estudantes em primeiro lugar', 'Confiança', 'Transparência', 'Comprometimento', 'Colaboração', 'Nosso negócio é gente']
+
+
+
+
+4 - join();
+
+O método join() junta todos os elementos de um array (ou um array-like object) em uma string e retorna esta string. (contrário do split() ).
+
+
+let frase = "Testando o método split";
+
+let palavras = frase.split(" ");
+
+console.log(palavras);
+
+let novaFrase = palavras.join("@");  => Testando@o@método@split
+
+console.log(novaFrase);
+
+
+
+
+5 - repeat();
+
+O método repeat() constrói e retorna uma nova string com um determinado número de cópias concatenadas da string original.
+
+let palavra = "repetir ";
+
+console.log(palavra.repeat(20));   => repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir

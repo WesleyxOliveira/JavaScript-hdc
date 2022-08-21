@@ -74,3 +74,23 @@ O método repeat() constrói e retorna uma nova string com um determinado númer
 let palavra = "repetir ";
 
 console.log(palavra.repeat(20));   => repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir repetir
+
+
+
+
+6 - Convertendo JSON para String
+
+Covertendo o JSON para uma string se caso eu precisar enviar os daddos para o servidor como string.
+
+let pessoa = {
+    "nome": "Wesley",
+    "idade": 31,
+    "profissao": "Programador",
+    "hobbies": ["Video game", "Leitura", "Correr"]
+}
+
+let pessoaTexto = JSON.stringify(pessoa);
+
+let pessoaJSON = JSON.parse(pessoaTexto);   =>  Converti para JSON.
+
+console.log(pessoaJSON);

@@ -54,7 +54,7 @@ console.log(Object.keys(carro));   =>   retorna os nomes das propriedades dos ob
 
 
 
-5 - structure objeto
+5 - Destructuring objeto
 
 destructuring serve para desestruturar o obj em variáveis, tornando o acesso aos valores da propriedade mais fácil sem ter que escrever por exemplo o nome do obj e da propriedade(obj.rodas) por exemplo.
 

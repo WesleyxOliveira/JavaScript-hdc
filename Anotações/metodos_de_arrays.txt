@@ -81,3 +81,21 @@ console.log(carros.includes("Fiat")); // => true;
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 console.log(arr.reverse());  => [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+
+
+
+10 - Destructuring em arrays
+
+/* 
+Destructuring com array: serve para referênciar o elemento do array de forma mais facil.
+
+*/
+
+let pessoas = ["Wesley", "Simone", "Juliana", "Osvaldo"];
+
+let [nomea, nomeb, nomec] = pessoas;
+
+console.log(nomea);
+console.log(nomeb);
+console.log(nomec);

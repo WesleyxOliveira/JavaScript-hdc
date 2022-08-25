@@ -1,0 +1,22 @@
+1 - como descobrir qual o prototype(O objeto construtor)  de um objeto.
+
+const pessoa = {
+    maos: 2,
+}
+
+console.log(Object.getPrototypeOf(pessoa));
+
+
+2 - como criar um novo objeto a partir de um outro objeto.
+
+const pessoa = {
+    maos: 2,
+}
+
+const pessoaNova = Object.create(pessoa);
+
+console.log(pessoaNova.hasOwnProperty("maos")); => false
+ // testando se pessoaNova tem as proprias propriedades  
+
+
+console.log(Object.getPrototypeOf(pessoaNova) == pessoa);  => true  // testando se pessoa é o prototype de pessoaNova.

@@ -41,3 +41,17 @@ console.log(doberman);
 console.log(doberman.raca);
 console.log(doberman.patas);
 console.log(doberman.cor);
+
+
+
+4 - Adicionando método ao prototype
+
+function Cachorro(raca, patas, cor) {
+    this.raca = raca;
+    this.patas = patas;
+    this.cor = cor;
+}
+
+Cachorro.prototype.uivar = function() { // Adiciona o método ao prototype e não ao filho.
+    console.log("Auuuu...");
+}

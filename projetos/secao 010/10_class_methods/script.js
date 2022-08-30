@@ -1,3 +1,7 @@
+/* 
+Com o class, não é possível adicionar propriedades fora do constructor, direto no class, para isso é preciso adicionar ao prototype.
+*/
+
 class Cachorro {
     constructor(raca, patas, cor) {
         this.raca = raca;

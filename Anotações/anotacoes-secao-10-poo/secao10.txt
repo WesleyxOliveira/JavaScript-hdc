@@ -55,3 +55,29 @@ function Cachorro(raca, patas, cor) {
 Cachorro.prototype.uivar = function() { // Adiciona o método ao prototype e não ao filho.
     console.log("Auuuu...");
 }
+
+
+
+
+5 - metodos e propriedades em uma classe
+
+Usando o class, não é possível adicionar propriedades fora do constructor direto na class, para adicionar propriedades nesse caso eu teria que adicionar a propriedade direto no constructor ou via prototype.
+
+
+
+
+6 - override
+
+define o valor de uma propriedade do prototype para ficar com um valor padrão, por exemplo.
+
+
+class Cachorro {
+    constructor(raca, patas, cor) {
+        this.raca = raca;
+        this.cor = cor;
+    }
+}
+
+Cachorro.prototype.patas = 4;   // se eu não tiver definido o valor da propriedade patas, posso usar a propriedade patas do prototype, que já vem com um valor padrão que defini como 4, se por um acaso neste exemplo o cachorro só tiver 3 patas, posso passar esse valor por parâmetro para a propriedade patas e usa-la.
+
+let Pastor = new Cachorro("Pastor Alemão", 3, "Caramelo"); 

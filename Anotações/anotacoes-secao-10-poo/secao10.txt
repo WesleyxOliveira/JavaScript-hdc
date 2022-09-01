@@ -81,3 +81,29 @@ class Cachorro {
 Cachorro.prototype.patas = 4;   // se eu não tiver definido o valor da propriedade patas, posso usar a propriedade patas do prototype, que já vem com um valor padrão que defini como 4, se por um acaso neste exemplo o cachorro só tiver 3 patas, posso passar esse valor por parâmetro para a propriedade patas e usa-la.
 
 let Pastor = new Cachorro("Pastor Alemão", 3, "Caramelo"); 
+
+
+
+
+7 - symbol 
+
+Serve para se conseguir fazer uma constante em uma propriedade de objeto.
+Não podem ser alteradas e nem ser criadas 2 vezes, parecido com o const de js
+
+
+let patas = Symbol();
+
+Cachorro.prototype[patas] = 4;
+
+
+//Acessando o symbol
+console.log(Cachorro.prototype[patas]);
+console.log(Objeto[patas]);
+
+
+
+
+8 - Getters e Setters
+
+* Get: serve para resgatar o valor de um propriedade;
+* Set: serve para alterar o valor de um propriedade;

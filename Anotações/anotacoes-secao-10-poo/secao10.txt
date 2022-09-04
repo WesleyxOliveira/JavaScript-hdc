@@ -107,3 +107,61 @@ console.log(Objeto[patas]);
 
 * Get: serve para resgatar o valor de um propriedade;
 * Set: serve para alterar o valor de um propriedade;
+
+
+class Cachorro {
+    constructor(raca, cor) {
+        this.raca = raca;
+        this.cor = cor;
+    }
+
+    latir() {
+        console.log("Au au");
+    };
+
+    get getCor() {
+        return this.cor;
+    };
+
+    set setCor(cor) {
+        this.cor = cor;
+    }
+}
+
+pastor.setCor = "Preto";
+
+console.log(pastor.getCor);
+
+
+
+9 - herança (inheritance) - uma classe pode herdar propriedades de outra classe, para isso usamos extends. Exemplo.
+
+
+
+class Mamifero {
+    constructor (patas) {
+        this.patas = patas;
+    }
+};
+
+
+class Cachorro extends Mamifero {
+   constructor(patas, raca) {
+    super(patas, patas);
+    this.patas = patas;
+    this.raca = raca;
+   }
+
+
+o super serve para copiar a propriedade da classe pai na classe filho.
+
+
+
+
+10 - instanceof
+
+Podemos verificar quem é o pai do objeto utilizando o instanceof. Exemplo.
+
+console.log(new Cachorro instanceof Mamifero);  // ture or false;
+
+console.log(pug instanceof Cachorro)  // true or false.

@@ -1,0 +1,100 @@
+1 - strict mode
+
+É um modo que você ativa no js que faz com que erros que antes falhavam silenciosamente, mostrem um erro de execução no console, para isso basta usar "use strict" no inicio do js ou dentro da funçao que vc precise do "use strict".Exemplo:
+
+"use strict"
+
+const ola = () => {
+    nome = "Wesley";
+    console.log("Olá " + nome);
+}
+
+ola();
+
+
+
+
+2 - tratamengo de input
+
+a função isNaN() testa de o valor informado é NaN (not a number) e retorna uma mensagem ao usuário. por Exemplo:
+
+function checarNumero(num) {
+    let number = Number(num);
+    if(Number.isNaN(number)) {
+        window.alert("Por favor passe apenas números para o programa!");
+    } else {
+        window.alert("Tudo OK!");
+    }
+}
+
+
+
+
+
+3 - Exceptions 
+
+* exceptions criam erros no programa caso alguma condição não seja atendida;
+
+* Porém as exceptions abortam o programa, só geram o erro;
+
+exemplo:
+
+let a = 1;
+
+if(a != 2) {
+
+	throw new Erros("O valor de a não pode ser 1");  => mensagem aparece no console para o programador como um erro.
+}
+
+
+Exemplo2: 
+
+function saudacao(nome) {
+    if( typeof nome != "string") {
+        throw new Error("O parâmetro nome precisa ser uma string");
+    } else {
+	window.alert("Olá" + nome);
+}
+
+saudacao(234);
+
+
+
+
+4 - try e catch
+
+Nesse caso o try tenta exercucar uma instrução e se der algum erro nesse bloco de código o catch pega esse erro e o retorna.Exemplo:
+
+
+
+try{
+    let c = a + blur;
+} catch(error) {
+    console.log("algo deu errado " + error);
+}
+
+algo deu errado ReferenceError: a is not defined
+
+
+
+5 - assertions
+
+Verificaçoes no programa que são utilizadas para assegurar que tudo ocorra da forma esperada.
+Por exemplo, verificar se um array contém elementos ou está vazio para executar determinada tarefa.
+
+
+let arr = [1, 2, 3, 4, 5];
+let arr2 = [];
+
+function iterarArray(arr) {
+    if(arr.length == 0) {
+        throw new Error("O array precisa ter pelo menos um elemento");
+    } else {
+        arr.forEach(element => {
+            console.log(element)
+        });
+    }
+}
+
+
+

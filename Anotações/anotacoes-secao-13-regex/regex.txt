@@ -1,0 +1,25 @@
+O que são Regex:
+Expressões regulares são padrões utilizados para selecionar combinações de caracteres em uma string
+
+
+1 - Neste exemplo foi criado um regex para ver se existe a palavra bola na string.
+
+const reg1 = new RegExp("bola");
+
+console.log(reg1.test("tem bola?"));  => true
+console.log(reg1.test("não tem"));  => false
+
+outra forma de se fazer
+
+const reg2 = /bola/;
+
+console.log(reg1.test("tem bola?"));
+console.log(reg1.test("não tem"));
+
+outra forma
+
+const reg2 = /bola/;
+
+let text = "Tem bola na cesta";
+
+console.log(reg2.test(text) => true;

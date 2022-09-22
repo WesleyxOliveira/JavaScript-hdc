@@ -23,3 +23,34 @@ const reg2 = /bola/;
 let text = "Tem bola na cesta";
 
 console.log(reg2.test(text) => true;
+
+
+
+2 - alguns caracteres especiais regex
+
+\d - Qualquer número de caractere, o mesmo que [0-9]
+\w - Um caratere alfanumérico ("teste")
+\s - Qualquer caractere de espaço em branco.
+\D - Caracteres que não são dígitos
+\W - Caractere não-alfanumérico
+\S - Caractere que não seja espaço em branco
+ . - Qualquer caractere, menos nova linha.
+
+
+3 - operador not
+
+const notab = /[^ab]/;  => não aceita a e b;
+
+4 - operador plus
+
+* Quando um + está após alguma expressão, este elemento pode se repetir mais de uma vez. Exemplo:
+
+const umOuMaisNumeros = /\d+/;
+
+console.log(umOuMaisNumeros.test("1234")); // true
+console.log(umOuMaisNumeros.test("1")); // true
+console.log(umOuMaisNumeros.test("asdf")); // false
+console.log(umOuMaisNumeros.test(" ")); // false
+
+
+

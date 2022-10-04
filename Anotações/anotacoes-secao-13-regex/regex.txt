@@ -62,6 +62,57 @@ console.log(padrao2.test('123asdf')); // true
 console.log(padrao2.test('123 ')); //true
 
 
+6 - operador de precisão
+
+* inserir o número de ocorrência entre {};
+
+const cep = /\d{5}-\d{3}/;  ->  console.log(cep.test('74970-690')); regex para validação de cep
+
+const tel = /\(\d{2}\)\s\d{4,5}-\d{4}/;  -> console.log(tel.test('(62) 99238-5571')); - regex para validção de telefone
+
+
+7 - Método exec // não é muito utilizado
+
+* O método exec nos retorna um objeto com algumas informações sobre a regex;
+* Se nada for encontrado, retorna null;
+
+const digitos = /\d+/;
+
+console.log(digitos.exec('tem o número 100 aqui')); // retorna um objeto com algumas informações. ex: index do padrão encontrado e etc.
+
+console.log(digitos.exec('tem o número aqui')); // retorna null pois n foi encontrado um padrão compatível com a regex.
+
+
+
+8 - match // Obs: não é muito utilizado
+
+* O método match funciona de forma similar ao exec, mas é um método que tem que ser utilizado na string como no exemplo abaixo; 
+
+const frase = 'O número 100 está aqui'.match(/\d+/);
+
+console.log(frase);
+
+
+9 - Choice pattern
+
+* Podemos colocar um instrução na regex que funciona como um || (or) das condicionais;
+
+
+const reg = /\w+: (Wesley|João|Maria)/; == nome: Wesley -> true
+
+console.log(reg.test('Nome: Wesley'));
+console.log(reg.test('Nome: José'));
+console.log(reg.test('Nome: Maria'));
+
+
+
+10 - reger para validar domínio
+
+const  validarDominio = /[?www.]\w+\.com|.com.br/;
+
+console.log(validarDominio.test('wwww.google.com')); //true
+
+console.log(validarDominio.test('google.com)); // true
 
 
 

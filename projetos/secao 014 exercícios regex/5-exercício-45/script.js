@@ -6,6 +6,8 @@
 
 */
 
-const validarUsuario = /[\w]{3,16}\d/;
+let validarNomeUsuario = /^(?=.{3,16}$)[a-z0-9-_]/;
 
-console.log(validarUsuario.test('asd'));
+console.log(validarNomeUsuario.test('wesley_123'));
+console.log(validarNomeUsuario.test('as'));
+console.log(validarNomeUsuario.test('111111111111111111111'));

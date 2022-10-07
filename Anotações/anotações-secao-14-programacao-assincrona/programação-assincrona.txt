@@ -1,0 +1,29 @@
+Programação assíncrona
+
+
+1 - O que é programção assíncrona
+
+* Com a programção assíncrona conseguimos estar executando ações em tempos que não sejam os mesmos da execução do programa, ou seja, o programa está executando um código de cima para baixo e ai começam a surgir outras ações que não estão ligadas ao fluxo do programa, elas tem seu próprio fluxo, não acontecem de forma sincronizada com outros eventos.
+
+
+* Uma das vertentes da prog. Assíncrona é fazer ações que aconteçam depois de um tempo por meio de callback;
+
+* Callback é uma função que faz uma ação após algum acontecimento no código;
+
+* Podemos realizar um callback com a função setTimeout;
+
+* OBS: Quando eu passo uma função como parâmetro, essa funão é chamada de Callback;
+
+* setTimeout()método chama uma função após alguns milissegundos.
+
+
+2 - Exemplo:
+
+console.log("1");
+
+setTimeout(function() {  => Essa funão setTimeout será executada 2 segundos depois do codigo cair no navegador
+    console.log("5");
+}, 2000);
+
+
+o método setTimeout recebe dois parâmetros, um é o callback e outro o intervalo de tempo em millisegundos.

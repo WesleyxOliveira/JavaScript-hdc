@@ -8,7 +8,7 @@ Promisses
 
 
 
-ex:  Resolve
+ex:  Resolve(resolve ou executa o código)
 
 let promessa = Promise.resolve(4+8);
 
@@ -69,3 +69,25 @@ const myPromise2 = new Promise((resolve, reject) => {
 })
 
 myPromise2.then((data) => {return data.toLowerCase()}).then((stringModificada) => console.log(stringModificada));
+
+
+
+
+
+
+// Como resolver várias promisses de uma vez 
+
+
+const p1 = new Promise((resolve, reject) => {
+    resolve("P1 OK!");
+})
+
+const p2 = new Promise((resolve, reject) => {
+    resolve("P2 OK!");
+})
+
+const p3 = new Promise((resolve, reject) => {
+    resolve("P3 OK!");
+})
+
+const resolveAll = Promise.all([p1, p2, p3]).then((data) => {console.log(data)});

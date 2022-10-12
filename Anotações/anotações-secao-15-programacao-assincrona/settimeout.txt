@@ -28,4 +28,6 @@ setTimeout(function() {  => Essa funão setTimeout será executada 2 segundos de
 
 o método setTimeout recebe dois parâmetros, um é o callback e outro o intervalo de tempo em millisegundos.
 
+O setTimeout é uma função de programação assíncrona.
+
 

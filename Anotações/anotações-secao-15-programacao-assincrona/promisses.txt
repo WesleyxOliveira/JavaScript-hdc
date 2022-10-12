@@ -6,10 +6,66 @@ Promisses
 
 * O objeto das promises é Promise, resolve é o método que resolve uma promise, o then é o que faz ela poder ser executada em um ponto futuro;
 
-ex:
+
+
+ex:  Resolve
 
 let promessa = Promise.resolve(4+8);
 
 console.log('Algum código');
 
 promessa.then((value) => console.log('A soma é ${value}'));
+
+
+
+* Método Catch
+
+* Uma promisse pode falhar, podemos reteer esse erro com o método chamado catch;
+
+* Com ele podemos exibir o erro no console, por exemplo e fazer o debug no código.
+
+Ex: 
+
+
+* Além do resolve(), há o método reject;
+
+* Que é quando determinada lógica não satisfaz nosso programa, então podemos ir para outra com o reject, em vez do resolve;
+
+* Resolve e reject terminam a Promise, ou seja, não podemos chamar mais o then, por exemplo;
+
+
+
+//Criação de promessa
+
+const myPromise = new Promise((resolve, reject) => {
+
+    const reg1 = /Wesley/; //Regex
+
+    if(reg1.test("Wesley")) {
+        resolve('Usuário Wesley encontrado!');
+    } else {
+        reject('Usuário Wesley não encontrado!');
+    }
+
+})
+
+
+
+
+
+
+// Encadeamento de then's
+
+const myPromise2 = new Promise((resolve, reject) => {
+
+    const reg1 = /Wesley/; //Regex
+
+    if(reg1.test("Wesley")) {
+        resolve('Usuário Wesley encontrado!');
+    } else {
+        reject('Usuário Wesley não encontrado!');
+    }
+
+})
+
+myPromise2.then((data) => {return data.toLowerCase()}).then((stringModificada) => console.log(stringModificada));

@@ -105,3 +105,15 @@ const p3 = new Promise((resolve, reject) => {
 })
 
 const resolveAll = Promise.all([p1, p2, p3]).then((data) => {console.log(data)});
+
+
+
+
+//Como resolver promises com o método race.
+
+O Método race é parecido o o all(), recebe um array de promessas, só que nesse caso a primeira promessa que for resolvida, será enviado a mensagem de retorno.Ex: 
+
+
+const ResolveAllRace = Promise.race([p4, p5, p6]).then((value) => {
+    console.log(value);
+})

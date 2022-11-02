@@ -11,3 +11,11 @@ Asyn e Await
 * Tentar usar o await sem async gera um erro;
 
 * Exemplo de uso: inserção de dado no banco;
+
+
+
+Funções assíncronas funcionam como promises, sendo assim podemos usar os métodos de promise nas funçoes async como .then e .catch.
+
+As funções assíncronas abstraem um pouco da sintaxe das promisses, sendo assim não é preciso utilizar os métodos resolve e reject, apenas com o sucesso da função a gente vai ter o resolve e em caso de insucesso a gente vai ter o reject, porém dali para frente continua sendo uma promise normal.
+
+

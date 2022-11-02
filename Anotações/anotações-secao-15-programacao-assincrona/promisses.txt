@@ -117,3 +117,19 @@ O Método race é parecido o o all(), recebe um array de promessas, só que ness
 const ResolveAllRace = Promise.race([p4, p5, p6]).then((value) => {
     console.log(value);
 })
+
+
+
+
+// async function
+
+Ao colocar a palavra chave async antes de uma função, faz com que essa função retorne uma promessa. Exemplo:
+
+Se a async function retornar alguma valor com êxito, a promessa terá sido resolvida, se por acaso ocorrer algum erro, a function retorna um reject por ela msm sem precisar colocar a propiedade reject na function.
+
+
+async function somar(a, b) {
+    return a+b;
+}
+
+somar(2, 4).then((value) => console.log(value));  => 6

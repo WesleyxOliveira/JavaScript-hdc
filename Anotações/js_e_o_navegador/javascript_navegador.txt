@@ -14,76 +14,42 @@ JavaScript e o navegador
 
 
 
-2 - forma de acessar propriedades de um elemento com console
 
-conso.log(document.childNodes)
+2 - O DOM
 
-console
-=> NodeList(2) [<!DOCTYPE html>, html]
+* Podemos mudar completamente uma página HTML através do DOM;
 
-console.log(document.childNodes[1]
+* É possível alterar: elementos, atributos, CSS;
 
-console
-=> html
+* Além de alterar podemos adicionar e também remover;
 
-console.log(document.childNodes[1].childNodes)
-
-console
-=> NodeList(3) [head, text, body]
+* Além de ser possível criar evetnos na página, como animações;
 
 
+3 - A árvore do DOM
 
-3 - Encontrando elementos
+* O documento HTML seria a árvore completa;
 
-* Podemos encontrar elementos de uma forma mais fácil do que se movendo pelo DOM;
+* A raiz da árvore é o Document(só ha uma raiz);
 
-* Como no HTML temos tags, classes e ids, o JavaScript nos possibilita utilizar estas características para encontrar o que desejamos;
+* Cada elemento da árvore chamamos de node(nó);
 
-* Há alguns métodos para isto: getElementsByTagName, getElementById, getElementsByClassName, e também o querySelector;
-
-* Vamos ver cada um deles em detalhes;
-
+* Conteúdos como texto são chamados de leaf nodes (as folhas);
 
 
-3.1 Encontrando elementos: por tag
+4 - Movendo-se através do DOM
 
-* Utilizamos o seguinte método para encontrar elementos pela tag:
+* Podemos acessar todos os elementos a partir do document.body;
 
-* document.getElementByTagName('h1');
+* A partir dele vamos entrando nos childNodes;
 
-console.log(document.getElementsByTagName("h1"));
-
-
-3.2 Encontrando elementos: por Id
-
-* Utilizamos o seguinte método para encontrar elementos por id;
-
-* document.getelementById('algum-id');
-
-console.log(document.getElementById("algum-id");
+* E depois acessando as propriedades que nos interessam;
 
 
-3.3 Encontrando elementos: por classe
+Exemplo:
 
-* Utilizamos o seguinte método para encontrar elementos pro classe:
-
-* document.getElementsByClassname('alguma-classe');
-
-console.log(document.getElementsByclassName('teste');
-
-
-3.4 - Encontrando elementos: por query
-
-* Um método que se assemelha a grande funcionalidade do jQuery;
-
-* Nos permitindo encontrar elementos pelo seus seletores de CSS;
-
-* O que facilita muito nossa vida, veja;
-
-
-console.log(document.querySelector('#algum-id'));
-
-console.log(document.querySelector('.teste'));
-
-console.log(document.querySelector('h1'));
-
+console.log(document.body);
+console.log(document.body.childNodes);
+console.log(document.body.childNodes[1]);
+console.log(document.body.childNodes[1].childNodes[1];
+console.log(document.body.childNodes[1].childNodes[1].textContent);

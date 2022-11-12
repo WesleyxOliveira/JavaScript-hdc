@@ -1,6 +1,6 @@
 Alterando o HTML
 
-1 - Alterando a DOM com insertBefore
+1 - Adicionando um elemento a DOM com insertBefore
 
 * insere um nó antes do nó de referência do método;
 
@@ -12,8 +12,36 @@ Alterando o HTML
 
 Ex:
 
-let span = document.creatElement("span");
-let el = document.querySelector("h1!);
-let pai = el.parentNode;
+let span = document.creatElement("span");  => insertBefore - elementoPai.insertBefore(elementoAserAdicionado, elementoReferência);
+let el = document.querySelector("h1");
+let pai = el.parentNode;  => pega o elemento acima(nó acima)
 
 pai.insertBefore(span, el);
+
+
+
+
+2 - Alterando a DOM com appendChild
+
+* Adiciona um nó após todos os elementos do elemento pai especificado;
+
+let p = document.createElement("p");
+let el2 = document.querySelector("h1");
+let pai2 = el2.parentNode;  => seleciona o elemento acima(nó acima);
+
+pai2.appendChild(p);
+
+
+
+3 - Alterando a DOM com replaceChild
+
+*  Repõe um antigo elemento no DOM, com um novo;
+
+let newHeading = document.createElement('h1')
+newHeading.textContent = 'Novo Texto';
+
+let oldHeading = document.getElementById("old-heading");
+
+let pai = oldHeading.parentNode;
+
+pai.replaceChild(newHeading, oldHeading);

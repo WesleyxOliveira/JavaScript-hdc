@@ -1,0 +1,12 @@
+Criando nós de texto
+
+* Podemos criar um nó de texto puro e inserir em um elemento;
+
+
+Exemplo:
+
+let texto = document.createTextNode("Este é o texto");
+
+let p = document.getElementById("p-sem-texto");
+
+p.appendChild(texto);

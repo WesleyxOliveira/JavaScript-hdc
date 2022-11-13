@@ -1,5 +1,12 @@
 JavaScript e o navegador
 
+* elemento.parentNode;  => acessa o pai do elemento, por exemplo se o elemento estiver dentro de uma div, é possível acessar essa div.
+
+* div.childNodes; => acessa o elemento filho filho da div se houver.
+
+
+
+
 1 - A estrutura HTML e o DOM
 
 * Quando uma página web é requisitada, ela recebe um texto que é transformado em uma estrutura HTML.
@@ -53,6 +60,9 @@ console
 
 console.log(document.getElementsByTagName("h1"));
 
+Obs: se existir mais de um elemento do msm tipo é retornado uma array com todos os elementos.
+
+
 
 3.2 Encontrando elementos: por Id
 
@@ -63,6 +73,7 @@ console.log(document.getElementsByTagName("h1"));
 console.log(document.getElementById("algum-id");
 
 
+
 3.3 Encontrando elementos: por classe
 
 * Utilizamos o seguinte método para encontrar elementos pro classe:
@@ -70,6 +81,10 @@ console.log(document.getElementById("algum-id");
 * document.getElementsByClassname('alguma-classe');
 
 console.log(document.getElementsByclassName('teste');
+
+Obs: se existir mais de um elemento do msm tipo é retornado uma array com todos os elementos.
+
+
 
 
 3.4 - Encontrando elementos: por query
@@ -79,6 +94,9 @@ console.log(document.getElementsByclassName('teste');
 * Nos permitindo encontrar elementos pelo seus seletores de CSS;
 
 * O que facilita muito nossa vida, veja;
+
+OBS: Se existir mais de um elemento é retornado o primeiro.
+
 
 
 console.log(document.querySelector('#algum-id'));

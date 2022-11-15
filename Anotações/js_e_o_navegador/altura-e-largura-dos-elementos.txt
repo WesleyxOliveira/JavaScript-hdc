@@ -1,0 +1,12 @@
+Verificando altura e largura do elemento
+
+* Com o JS também é possível verificar propriedades do elemento como altura e largura, veja;
+
+
+let elTeste = document.getElementById('titulo');
+
+console.log(elTeste.offWidth);
+console.log(elTeste.offsetHight);
+
+console.log(elTeste.clientWidth);  // desconsidera bordas;  
+console.log(elTeste.clientHeight); // desconsidera bordas;

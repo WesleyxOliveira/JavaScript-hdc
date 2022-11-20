@@ -5,8 +5,8 @@ Verificando altura e largura do elemento
 
 let elTeste = document.getElementById('titulo');
 
-console.log(elTeste.offWidth);
-console.log(elTeste.offsetHight);
+console.log(elTeste.offWidth);  // considera boradas
+console.log(elTeste.offsetHight);  // considera bordas
 
 console.log(elTeste.clientWidth);  // desconsidera bordas;  
 console.log(elTeste.clientHeight); // desconsidera bordas;

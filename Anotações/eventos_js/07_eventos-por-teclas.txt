@@ -1,0 +1,27 @@
+Eventos de tecla(key event)
+
+
+* Sempre que uma tecla é pressionada, são gerados dois eventos: keyup e keydown;
+
+* Podemos realizar ações nestes eventos também;
+
+* Keyup é quando soltamos a tecla;
+
+* keydown é quando apertamos;
+
+
+Ex:
+
+window.addEventListener("keydown", function(e) {
+
+	if(e.key == "v") {
+
+	console.log("Apertou a letra v");
+}
+
+});
+
+
+Obs: Adicionar o evento de teclas ao objeto window. 
+
+window.addEventListener();

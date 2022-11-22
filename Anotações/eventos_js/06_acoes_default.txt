@@ -1,0 +1,16 @@
+Ações default
+
+
+* Muitos elementos/teclas já tem ações pre-definidas, como clicar num link nos leva a outra página;
+
+* Podemos parar este evento defualt, e criar uma lágica diferente para o elemento em questão;
+
+Ex: 
+
+let a = document.querySelector('a');
+
+a.ddEvenListener('click', function(e) {
+
+	e.preventDefault();
+	console.log("Clicou mas não mudou de link");
+});

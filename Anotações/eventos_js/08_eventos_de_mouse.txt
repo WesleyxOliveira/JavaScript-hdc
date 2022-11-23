@@ -13,3 +13,23 @@ btn.addEventListener("dblclick", function() {
 	console.log("Ativou com double click");
 
 });
+
+
+
+Movimento do mouse
+
+* Podemos ativar eventos com a movimentção do mouse também;
+
+* O nome dele é mousemove;
+
+* Através desse evento podemos detectara posição do ponteiro do mouse na tela;
+
+
+E: 
+
+window.addEvetnListener('mousemove', function(e) {
+
+	console.log(e.x);
+	console.log(e.y);
+	
+});

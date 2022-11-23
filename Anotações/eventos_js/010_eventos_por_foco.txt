@@ -1,0 +1,24 @@
+Eventos por foco
+
+
+* Quando focamos em um elemento ou saímos dele, podemos também atrelar um evento a esta ação;
+
+* Focus para quando um elemento recebe foco e blur quando ele perde;
+
+
+Ex:
+
+let input = document.querySelector('input');
+
+input.addEventListener('focus', function() {
+
+	console.log("foco no input");
+
+});
+
+
+input.addEventListener("blur", function() {  // evento acionado quando se sai do input;
+
+	console.log("Perdeu o foco");
+
+});
